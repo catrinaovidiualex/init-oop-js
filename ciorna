@@ -1,0 +1,20 @@
+let x= new Masina(1,"Audi",1999.99,2013);
+
+let p=new Persoana(1,"Catrina","Alex",18);
+let inch=new Inchiriere(1, 1,1,"2022-01-23");
+
+
+
+
+/*console.log(JSON.stringify(x));
+
+
+localStorage.setItem("ceva",JSON.stringify(x));*/
+
+console.log(localStorage.getItem("ceva"));
+
+
+console.log(JSON.stringify(p));
+localStorage.setItem("cheiePers",JSON.stringify(p));
+
+console.log(localStorage(cheiePers));
