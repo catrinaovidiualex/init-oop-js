@@ -14,6 +14,8 @@ class ControlMasina{
 
      load=()=>{
         let items=localStorage.getItem("masini");
+
+        
         JSON.parse(items).forEach(car => {
             this.list.push(new Masina(car));
             

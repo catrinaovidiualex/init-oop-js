@@ -3,11 +3,18 @@ class Masina{
        constructor(obj){
         this.pret=obj.pret;
         this.an=obj.an;
-        this.marca=obj.an;
+        this.marca=obj.marca;
         this.id=obj.id;
         }
 
- /*fuctie pt descriere masina*/     
+       // constructor(id,marca,pret,an){
+       //        this.id=id;
+       //        this.marca=marca;
+       //        this.pret=pret;
+       //        this.an=an;
+       // }
+
+//  fuctie pt descriere masina
         descriere=()=>{
             let descriere="";
             descriere+=" Id Masina: "+this.id+",";
@@ -17,6 +24,7 @@ class Masina{
             
             return descriere;
         }
+
 
 }
 
