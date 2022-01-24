@@ -12,6 +12,11 @@ class Home{
         this.controllMasini=new ControllerMasini();
 
         this.populateTable();
+
+        this.addBtn=document.querySelector(".creeazaMasina");
+
+        this.addBtn.addEventListener("click",this.handleclick);
+
      }
 
 
@@ -69,7 +74,18 @@ class Home{
      }
 
 
+     handleclick=(e)=>{
+
+
+        console.log("ceva");
+
+     }
+     
+
+
 }
+
+
 
 
 export default Home;
