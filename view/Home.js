@@ -61,7 +61,7 @@ class Home{
             table.innerHTML+=`
             <tr>
                 <th scope="row">${e.id}</th>
-                <td><a href "#">${e.marca}</a></td>
+                <td><a href="#" class="linkCars">${e.marca}</a></td>
                 <td>${e.pret}</td>
                 <td>${e.an}</td>
 

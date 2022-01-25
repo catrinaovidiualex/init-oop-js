@@ -51,6 +51,19 @@ tbody tr:nth-child(2n+1){
     height: 30px;
 
 }
+
+.linkCars{
+    color:#1c811c;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.linkCars:hover{
+    color:#030303;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
     
 header h2{
     background-color: rgb(46, 107, 69);
