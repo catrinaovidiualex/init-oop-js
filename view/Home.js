@@ -17,6 +17,11 @@ class Home{
 
         this.addBtn.addEventListener("click",this.handleclick);
 
+
+        this.containerAddCar=document.querySelector(".containerM");
+
+        this.createPageAddCar();
+
      }
 
 
@@ -71,6 +76,34 @@ class Home{
     
             `
         })
+     }
+
+     createPageAddCar=()=>{
+
+        this.container.innerHTML=`
+        <h3>Masina Noua</h3>
+
+        <div class="inputCars">
+
+            <label for="text">ID</label>
+            <input type="text"></input>
+
+            <label for="text">Marca<label>
+            <input type="text"></input>
+
+            <label for="text">Pret</label>
+            <input type="text"></input>
+
+            <label for="text">An<label>
+            <input type="text"></input>
+        </div>
+
+        <div class="buttonsAddCars">
+            <button>Creeaza masina noua</button>
+            <button>Anuleaza</button>
+        </div>
+        `
+
      }
 
 

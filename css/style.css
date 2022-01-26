@@ -110,5 +110,27 @@ button.creeazaMasina {
       background-color: rgb(12, 141, 23);
   }
 
+  .containerM{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .inputCars{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .buttonsAddCars{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
   
 
