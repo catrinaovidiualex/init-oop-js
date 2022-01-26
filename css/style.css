@@ -111,26 +111,56 @@ button.creeazaMasina {
   }
 
   .containerM{
+    width:500px; 
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin:auto;
+    
   }
 
   .inputCars{
+    width:200px;
     display:flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding-left: 20px;
+    
+    
   }
   .buttonsAddCars{
+    width:200px;
     display:flex;
+    margin-top: 10px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding-left: 20px;
+
   }
+  .newCars{
+    background-color: #04AA6D;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding:5px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius:5px ;
+  }
+
+  .newCars:hover{
+    background-color: rgb(12, 141, 23);
+}
 
   
 

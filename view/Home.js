@@ -99,7 +99,7 @@ class Home{
         </div>
 
         <div class="buttonsAddCars">
-            <button>Creeaza masina noua</button>
+            <input type="submit" value="Creeaza masina noua" class="newCars">
             <button>Anuleaza</button>
         </div>
         `
