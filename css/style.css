@@ -156,10 +156,41 @@ button.creeazaMasina {
     cursor: pointer;
     margin-left: 20px;
     border-radius:5px ;
+    margin-bottom: 10px;
+
   }
 
   .newCars:hover{
     background-color: rgb(12, 141, 23);
+}
+
+.anuleaza{
+    background-color: #04AA6D;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding:5px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius:5px ;
+  }
+
+  .anuleaza:hover{
+    background-color: rgb(12, 141, 23);
+}
+
+input{
+    
+        padding: 5px;
+        font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        border-radius: 2px;
+        border-color: rgb(231, 231, 231);
+        transition: all 0.4s ease 0s;
 }
 
   

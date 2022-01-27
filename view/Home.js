@@ -86,21 +86,21 @@ class Home{
         <div class="inputCars">
 
             <label for="text">ID</label>
-            <input type="text"></input>
+            <input type="text" class="idMasina"></input>
 
             <label for="text">Marca<label>
-            <input type="text"></input>
+            <input type="text" class="marcaMasina"></input>
 
             <label for="text">Pret</label>
-            <input type="text"></input>
+            <input type="text" class="pretMasina"></input>
 
             <label for="text">An<label>
-            <input type="text"></input>
+            <input type="text" class="anMasina"></input>
         </div>
 
         <div class="buttonsAddCars">
             <input type="submit" value="Creeaza masina noua" class="newCars">
-            <button>Anuleaza</button>
+            <button class="anuleaza">Anuleaza</button>
         </div>
         `
 
