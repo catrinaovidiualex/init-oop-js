@@ -111,18 +111,18 @@ button.creeazaMasina {
   }
 
   .containerM{
-    width:500px; 
+    width:300px; 
     display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
+    align-items: left;
+    justify-content: centeleft;
     flex-direction: column;
-    margin:auto;
+    
     
   }
 
   .inputCars{
-    width:200px;
+    width:210px;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -191,6 +191,101 @@ input{
         border-radius: 2px;
         border-color: rgb(231, 231, 231);
         transition: all 0.4s ease 0s;
+}
+
+.containerModif{
+    width:300px; 
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: centeleft;
+    flex-direction: column;
+        
+  }
+
+  .updateCars{
+    width:210px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+        
+  }
+
+  .buttonsUpdateCars{
+    width:200px;
+    display:flex;
+    margin-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+    
+
+  }
+
+ 
+  .modifMasina{
+      margin-bottom: 10px;
+      background-color: #04AA6D;
+      border: none;
+      font-size: 18px;
+      color: #FFFFFF;
+      padding:5px;
+      width: 150px;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+      margin-left: 20px;
+      border-radius:5px ;
+  }
+
+  .modifMasina:hover{
+    background-color: rgb(12, 141, 23);
+}
+
+
+  .anuleazaModif{
+      margin-bottom: 10px;
+      background-color: #04AA6D;
+      border: none;
+      font-size: 18px;
+      color: #FFFFFF;
+      padding:5px;
+      width: 100px;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+      margin-left: 20px;
+      border-radius:5px ;
+  }
+
+  .anuleazaModif:hover{
+    background-color: rgb(12, 141, 23);
+}
+
+  .stergeModif{
+    background-color: #04AA6D;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding:5px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius:5px ;
+  }
+
+  .stergeModif:hover{
+    background-color: rgb(12, 141, 23);
 }
 
   
