@@ -1,5 +1,7 @@
 import ControllerMasini from "../controller/ControlMasina.js"
 
+import Addcar from "../view/Addcar.js";
+
 class Home{
 
 
@@ -13,17 +15,12 @@ class Home{
 
         this.populateTable();
 
-        this.addBtn=document.querySelector(".creeazaMasina");
+        this.btnCreareMasina=document.querySelector(".creeazaMasina");
 
-        this.addBtn.addEventListener("click",this.handleclick);
+        this.btnCreareMasina.addEventListener("click",this.handleclick);
 
-
-        this.containerAddCar=document.querySelector(".containerM");
-
-        this.createPageAddCar();
-
+       
      }
-
 
      createPage=()=>{
 
@@ -55,7 +52,6 @@ class Home{
 
      }
 
-
      populateTable=()=>{
 
 
@@ -78,39 +74,17 @@ class Home{
         })
      }
 
-     createPageAddCar=()=>{
-
-        this.container.innerHTML=`
-        <h3>Masina Noua</h3>
-
-        <div class="inputCars">
-
-            <label for="text">ID</label>
-            <input type="text" class="idMasina"></input>
-
-            <label for="text">Marca<label>
-            <input type="text" class="marcaMasina"></input>
-
-            <label for="text">Pret</label>
-            <input type="text" class="pretMasina"></input>
-
-            <label for="text">An<label>
-            <input type="text" class="anMasina"></input>
-        </div>
-
-        <div class="buttonsAddCars">
-            <input type="submit" value="Creeaza masina noua" class="newCars">
-            <button class="anuleaza">Anuleaza</button>
-        </div>
-        `
-
-     }
-
-
      handleclick=(e)=>{
 
 
-        console.log("ceva");
+        e.preventdefault;
+
+        console.log("aici");
+
+
+        new Addcar();
+       
+
 
      }
      

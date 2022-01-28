@@ -17,7 +17,8 @@ class ControlMasina{
 
         
         JSON.parse(items).forEach(car => {
-            this.list.push(new Masina(car));
+        
+         this.list.push(new Masina(car));
             
         });
      }
