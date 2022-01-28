@@ -35,6 +35,31 @@ class ControlMasina{
      }
 
 
+     //addCar
+
+     adaugareMasinaNoua=(masina)=>{
+
+
+      this.list.push(masina);
+
+      
+      localStorage.removeItem("masini");
+      console.log(this.list);
+
+
+      localStorage.setItem('masini',JSON.stringify(this.list));
+     
+
+    }
+
+     //updateCar
+     //deleteCar
+
+
+
+
+
+
 
 }
 

@@ -1,10 +1,16 @@
-import Home from "./view/Home.js"
-import Addcar from "./view/Addcar.js"
+import ControlMasina from "./controller/ControlMasina.js";
+import Masina from "./model/Masina.js";
+
+let cm=new ControlMasina();
 
 
-let h= new Home();
+
+let m1= new Masina({id:10,marca:"Cielo",pret:650,an:2000});
 
 
+console.log(m1.descriere());
+
+cm.adaugareMasinaNoua(m1);
 
 
 
