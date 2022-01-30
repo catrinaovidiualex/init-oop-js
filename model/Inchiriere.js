@@ -1,6 +1,6 @@
 class Inchiriere{
-    constructor(idInchiere,idMasina,idPersoana,createdate){
-        this.idInchiere=idInchiere;
+    constructor(idInchiriere,idMasina,idPersoana,createdate){
+        this.idInchiriere=idInchiriere;
         this.idMasina=idMasina;
         this.idPersoana=idPersoana;
         this.createdate=createdate;
@@ -8,7 +8,7 @@ class Inchiriere{
 
     descriereInchiriere=()=>{
         let descriereInch="";
-        descriereInch+=" ID inchiriere: "+this.idInchiere+",";
+        descriereInch+=" ID inchiriere: "+this.idInchiriere+",";
         descriereInch+=" ID masina: "+this.idMasina+",";
         descriereInch+=" ID persoana: "+this.idPersoana+",";
         descriereInch+=" Data inchiriere: "+this.createdate;

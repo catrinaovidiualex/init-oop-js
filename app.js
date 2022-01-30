@@ -1,25 +1,19 @@
+import ControlInchiriere from "./controller/ControlInchiriere.js";
 import ControlMasina from "./controller/ControlMasina.js";
+import Inchiriere from "./model/Inchiriere.js";
 import Masina from "./model/Masina.js";
 
 let cm=new ControlMasina();
 
-let m3=new Masina({pret:1250,an:2008,marca:"Opel Astra",id:2});
+/*let m3=new Masina({pret:1250,an:2008,marca:"Opel Astra",id:2});
 
-console.log(cm.pozitieMasina(m3));
+console.log(cm.pozitieMasina(m3));*/
 
-let m4=new Masina({id:2,marca:"Opel Astra",pret:2300,an:2023});
+let m4=new Masina();
 
-console.log(cm.modificareMasinaExistenta(m4));
+console.log(cm.update({id:3,marca:"test testare",pret:9999,an:1999}));
 
-let m5=new Masina({id:5,marca:"Tesla",pret:6600,an:2022});
-console.log(cm.modificareMasinaExistenta(m5));
-
-/*console.log(cm.stergeMasina(m4));*/
-
-console.log(cm.adaugareMasinaNoua(m4));
+/*console.log(cm.update({id:4,marca:"",pret:"",an:2001}));*/
 
 
-
-
-
-
+console.log(cm.update({id:4,marca:"BMW X5 Test",pret:9999,an:""}));

@@ -14,15 +14,13 @@ class ControlMasina{
 
      load=()=>{
         let items=localStorage.getItem("masini");
-
         
         JSON.parse(items).forEach(car => {
         
-         this.list.push(new Masina(car));
+         this.list.push(new Masina(car.id,car.marca,car.pret,car.an));
             
         });
      }
-
 
      afisare=()=>{
 
@@ -34,7 +32,7 @@ class ControlMasina{
         })
      }
 
-
+     //CRUD
      //addCar
 
      adaugareMasinaNoua=(masina)=>{
@@ -50,20 +48,29 @@ class ControlMasina{
 
      //updateCar
 
-     modificareMasinaExistenta=(masina)=>{
+     update=(masina)=>{
+   
 
-    
       
-      this.list[this.pozitieMasina(masina)]=masina;
+      let poz=this.pozitieMasina(masina);
+
+      if(poz!=-1){
+           if(masina.marca!=""){
+               this.list[poz].marca=masina.marca;
+           }
+           if(masina.pret!=""){
+              this.list[poz].pret=masina.pret;
+           }
+           if(masina.an!=""){
+            this.list[poz].an=masina.an;
+        }
+        
+      }
 
 
-      localStorage.removeItem("masini");
-
-      localStorage.setItem("masini",JSON.stringify( this.list));
-
+      this.save();
 
      }
-
 
      //deleteCar
 
@@ -75,9 +82,8 @@ class ControlMasina{
       this.list=vec;
 
 
-     localStorage.removeItem("masini");
-     localStorage.setItem('masini',JSON.stringify(this.list));
-     
+      this.save();
+    
      }
 
 
@@ -93,9 +99,17 @@ class ControlMasina{
 
          
         }
-
         return -1;
    }
+
+     // pentru a salva datele din lista in localstorage 
+      save=()=>{
+
+         localStorage.removeItem("masini");
+         localStorage.setItem('masini',JSON.stringify(this.list));
+         
+
+      }
 
 
 
