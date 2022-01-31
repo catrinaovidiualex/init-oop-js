@@ -50,25 +50,31 @@ class ControlMasina{
 
      update=(masina)=>{
    
-
+      
       
       let poz=this.pozitieMasina(masina);
 
       if(poz!=-1){
-           if(masina.marca!=""){
+
+
+           if(masina.marca!=""&&masina.marca){
                this.list[poz].marca=masina.marca;
+              
            }
-           if(masina.pret!=""){
+
+           if(masina.pret!=""&&masina.pret){
               this.list[poz].pret=masina.pret;
            }
-           if(masina.an!=""){
+
+           if(masina.an!=""&&masina.an){
             this.list[poz].an=masina.an;
         }
         
+        this.save();
       }
 
 
-      this.save();
+      
 
      }
 

@@ -1,7 +1,7 @@
-import ControlInchiriere from "./controller/ControlInchiriere.js";
+
 import ControlMasina from "./controller/ControlMasina.js";
+import ControlInchiriere from "./controller/ControlInchiriere.js";
 import Inchiriere from "./model/Inchiriere.js";
-import Masina from "./model/Masina.js";
 
 let cm=new ControlMasina();
 
@@ -9,11 +9,17 @@ let cm=new ControlMasina();
 
 console.log(cm.pozitieMasina(m3));*/
 
-let m4=new Masina();
-
-console.log(cm.update({id:3,marca:"test testare",pret:9999,an:1999}));
 
 /*console.log(cm.update({id:4,marca:"",pret:"",an:2001}));*/
 
 
-console.log(cm.update({id:4,marca:"BMW X5 Test",pret:9999,an:""}));
+/*console.log(cm.update({id:4,marca:" Test"}));*/
+
+
+let ci= new ControlInchiriere();
+let i1=new Inchiriere({idInchiriere: 66,idMasina: 5,idPersoana: 345,createdate:"01/31/2022"});
+
+console.log(ci.adaugareInchiriere(i1));
+console.log(ci.stergeInchiriere({idInchiriere: 7, idMasina: 3, idPersoana: 333, createdate: "9/12/2021"}));
+
+console.log(ci.updateInchiriere({idInchiriere: 7, idMasina: 999, idPersoana: 999, createdate: "9/12/2021"}));

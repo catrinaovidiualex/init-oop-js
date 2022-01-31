@@ -8,7 +8,7 @@ constructor(){
 load=()=>{
     let pers=localStorage.getItem("persoane");
     JSON.parse(pers).forEach(p => {
-        this.list.push(new Persoana(p));
+        this.list.push(new Persoana(p.idPers,p.nume,p.prenume,p.varsta));
         
     });
 

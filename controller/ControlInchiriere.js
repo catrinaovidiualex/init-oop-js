@@ -1,4 +1,3 @@
-import Inchiriere from "../model/Inchiriere.js";
 import Masina from "../model/Masina.js";
 
 class ControlInchiriere{
@@ -14,7 +13,7 @@ class ControlInchiriere{
 
         let items=localStorage.getItem("inchirieri");
         JSON.parse(items).forEach(inch => {
-        this.list.push(new Inchiriere(inch));
+        this.list.push(new Inchiriere(inch.idInchiriere,inch.idMasina,inch.idPersoana,inch.createdate));
             
         });
 
@@ -37,13 +36,26 @@ class ControlInchiriere{
         
     }
 
-    modificareInchiriere=(inch)=>{
+    updateInchiriere=(inch)=>{
 
-      this.list[this.pozitieInchiriere(inch)]=inch;
-      
-      localStorage.removeItem("inchirieri");
+      let pozitie=this.pozitieInchiriere(inch);
 
-      localStorage.setItem("inchirieri",JSON.stringify(this.list));
+      if(pozitie!=-1){
+          // daca idMasina nu se modifica si daca aceasta exista
+          if(inch.idMasina!=""&&inch.idMasina){
+              this.list[poz].idMasina=inch.idMasina;
+          }
+
+          if(inch.idPersoana!=""&&inch.idPersoana){
+            this.list[poz].idPersoana=inch.idPersona;
+        }
+
+        if(inch.createdate!=""&&inch.createdate){
+            this.list[poz].createdate=inch.createdate;
+        }
+        this.save()
+
+      }
         
     }
 
@@ -56,6 +68,18 @@ class ControlInchiriere{
         }
         return -1;
 
+    }
+
+    stergeInchiriere=(inch)=>{
+        let vec=this.list.filter((e)=>e.id!=inch.idInchiriere)
+        this.list=vec;
+        this.save();
+
+    }
+
+    save=()=>{
+        localStorage.removeItem("inchirieri");
+        localStorage.setItem('inchirieri',JSON.stringify(this.list));
     }
 
 
