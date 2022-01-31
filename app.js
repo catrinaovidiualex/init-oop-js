@@ -23,3 +23,5 @@ console.log(ci.adaugareInchiriere(i1));
 console.log(ci.stergeInchiriere({idInchiriere: 7, idMasina: 3, idPersoana: 333, createdate: "9/12/2021"}));
 
 console.log(ci.updateInchiriere({idInchiriere: 7, idMasina: 999, idPersoana: 999, createdate: "9/12/2021"}));
+
+console.log(ci.afisare());

@@ -1,4 +1,4 @@
-import Masina from "../model/Masina.js";
+import Masina from "../model/Inchiriere.js";
 
 class ControlInchiriere{
 
