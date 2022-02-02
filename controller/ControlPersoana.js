@@ -14,5 +14,10 @@ load=()=>{
 
 }
 
+afisare=()=>{
+    this.list.forEach((e)=>{
+        console.log(e);
+    });
+}
 
 }

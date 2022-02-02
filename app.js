@@ -2,6 +2,7 @@
 import ControlMasina from "./controller/ControlMasina.js";
 import ControlInchiriere from "./controller/ControlInchiriere.js";
 import Inchiriere from "./model/Inchiriere.js";
+import ControlPersoana from "./model/Persoana.js"
 
 let cm=new ControlMasina();
 
@@ -25,3 +26,8 @@ console.log(ci.stergeInchiriere({idInchiriere: 7, idMasina: 3, idPersoana: 333, 
 console.log(ci.updateInchiriere({idInchiriere: 7, idMasina: 999, idPersoana: 999, createdate: "9/12/2021"}));
 
 console.log(ci.afisare());
+
+let cp=new ControlPersoana();
+let p1=new Persoane({idPers: 100, nume: Visan, prenume: Cornel, varsta: 34});
+
+console.log(cp.afisare());
