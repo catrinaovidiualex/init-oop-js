@@ -28,7 +28,7 @@ table{
 
 thead tr th{
     border-bottom: 2px solid rgb(211, 131, 10);
-    font-size:20px;
+    font-size:18px;
 }
 tbody tr th {
     color:rgb(131, 82, 10);
@@ -362,6 +362,100 @@ input{
 }
 
 .btnExit:hover{
+  background-color: rgb(12, 141, 23);
+}
+
+.containerInchM{
+  width:300px; 
+  display: flex;
+  text-align: left;
+  align-items: left;
+  justify-content: centeleft;
+  flex-direction: column;
+  
+  
+}
+
+.divInchCars{
+  width:210px;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20px;
+  
+  
+}
+
+.buttonsRentCars{
+  width:200px;
+  display:flex;
+  margin-top: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20px;
+
+}
+
+.inchMasina{
+  background-color: #04AA6D;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding:5px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius:5px ;
+}
+
+.inchMasina:hover{
+  background-color: rgb(12, 141, 23);
+}
+
+.inchM{
+  background-color: #04AA6D;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding:5px;
+  width: 130px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius:5px ;
+  margin-bottom: 10px;
+
+}
+
+.inchM:hover{
+  background-color: rgb(12, 141, 23);
+}
+
+.stergeInch{
+  background-color: #04AA6D;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding:5px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius:5px ;
+}
+
+.stergeInch:hover{
   background-color: rgb(12, 141, 23);
 }
 
