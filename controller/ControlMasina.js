@@ -17,7 +17,7 @@ class ControlMasina{
         
         JSON.parse(items).forEach(car => {
         
-         this.list.push(new Masina(car.id,car.marca,car.pret,car.an));
+        this.list.push(new Masina(car.id,car.marca,car.pret,car.an));
             
         });
      }
@@ -49,9 +49,7 @@ class ControlMasina{
      //updateCar
 
      update=(masina)=>{
-   
-      
-      
+       
       let poz=this.pozitieMasina(masina);
 
       if(poz!=-1){

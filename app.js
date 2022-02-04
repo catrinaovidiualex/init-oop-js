@@ -18,16 +18,13 @@ console.log(cm.pozitieMasina(m3));*/
 
 
 let ci= new ControlInchiriere();
-let i1=new Inchiriere({idInchiriere: 66,idMasina: 5,idPersoana: 345,createdate:"01/31/2022"});
+let i1=new Inchiriere(10,3,345,"02/02/2022");
 
-console.log(ci.adaugareInchiriere(i1));
-console.log(ci.stergeInchiriere({idInchiriere: 7, idMasina: 3, idPersoana: 333, createdate: "9/12/2021"}));
+/*console.log(ci.adaugareInchiriere(i1));*/
+/*console.log(ci.stergeInchiriere(i1));*/
+console.log(ci.updateInchiriere({idInchiriere:10,idMasina}));
 
-console.log(ci.updateInchiriere({idInchiriere: 7, idMasina: 999, idPersoana: 999, createdate: "9/12/2021"}));
 
-console.log(ci.afisare());
-
-let cp=new ControlPersoana();
+/*let cp=new ControlPersoana();
 let p1=new Persoane({idPers: 100, nume: Visan, prenume: Cornel, varsta: 34});
-
-console.log(cp.afisare());
+console.log(cp.afisare());*/

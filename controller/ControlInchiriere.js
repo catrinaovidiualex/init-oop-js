@@ -1,4 +1,4 @@
-import Masina from "../model/Inchiriere.js";
+import Inchiriere from "../model/Inchiriere.js";
 
 class ControlInchiriere{
 
@@ -53,7 +53,7 @@ class ControlInchiriere{
         if(inch.createdate!=""&&inch.createdate){
             this.list[poz].createdate=inch.createdate;
         }
-        this.save()
+        this.save();
 
       }
         
@@ -71,7 +71,7 @@ class ControlInchiriere{
     }
 
     stergeInchiriere=(inch)=>{
-        let vec=this.list.filter((e)=>e.id!=inch.idInchiriere)
+        let vec=this.list.filter((e)=>e.idInchiriere!=inch.idInchiriere)
         this.list=vec;
         this.save();
 
