@@ -1,15 +1,31 @@
 import ControllerMasini from "../controller/ControlMasina.js";
+import Masina from "../model/Masina.js";
 
 class Addcar{
 
     constructor(){
     this.containerAddCar=document.querySelector(".container");
     this.createAddCarPage();
+    this.control= new ControllerMasini();
+
+    this.masina= new Masina();
+
+    this.inputCars= document.querySelector(".inputCars");
+
+    this.inputCars.addEventListener("input",this.handleChange);
+    this.add=document.querySelector(".newCars");
+
+    this.add.addEventListener("click",this.handleclickadd);
+
+
+
  
     }
 
 
     createAddCarPage=()=>{
+
+
 
         this.containerAddCar.innerHTML=`
 
@@ -31,15 +47,66 @@ class Addcar{
         </div>
 
         <div class="buttonsAddCars">
-            <input type="submit" value="Creeaza masina noua" class="newCars">
+            <input type="" value="Salveaza masina noua" class="newCars">
             <button class="anuleaza">Anuleaza</button>
         </div>
         
         `
     }
 
+
    
 
+    handleChange=(e)=>{
+
+
+         let obj=e.target;
+
+         if(obj.classList.contains("idMasina")){
+            this.masina.id=obj.value;
+           
+        }
+
+
+         if(obj.classList.contains("marcaMasina")){
+
+            this.masina.marca=obj.value;
+          
+         }
+         if(obj.classList.contains("pretMasina")){
+             this.masina.pret=obj.value
+            
+         }
+
+         if(obj.classList.contains("anMasina")){
+            this.masina.an=obj.value
+            
+        }
+
+
+
+        console.log(this.masina);
+
+       
+
+
+    }
+
+    handleclickadd=()=>{
+       
+        this.control.adaugareMasinaNoua(this.masina);
+
+
+        location.reload();
+
+
+        
+  
+  
+          
+  
+       }
+       
  
 
 }

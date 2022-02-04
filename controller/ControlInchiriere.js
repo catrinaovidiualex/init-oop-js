@@ -43,15 +43,15 @@ class ControlInchiriere{
       if(pozitie!=-1){
           // daca idMasina nu se modifica si daca aceasta exista
           if(inch.idMasina!=""&&inch.idMasina){
-              this.list[poz].idMasina=inch.idMasina;
+              this.list[pozitie].idMasina=inch.idMasina;
           }
 
           if(inch.idPersoana!=""&&inch.idPersoana){
-            this.list[poz].idPersoana=inch.idPersona;
+            this.list[pozitie].idPersoana=inch.idPersoana;
         }
 
         if(inch.createdate!=""&&inch.createdate){
-            this.list[poz].createdate=inch.createdate;
+            this.list[pozitie].createdate=inch.createdate;
         }
         this.save();
 
@@ -61,17 +61,21 @@ class ControlInchiriere{
 
 
     pozitieInchiriere=(inch)=>{
+
         for(let i=0;i<this.list.length;i++){
             if(this.list[i].idInchiriere==inch.idInchiriere){
                 return i;
             }
         }
+
         return -1;
 
     }
 
+
+
     stergeInchiriere=(inch)=>{
-        let vec=this.list.filter((e)=>e.idInchiriere!=inch.idInchiriere)
+        let vec=this.list.filter((e)=>e.idInchiriere!=inch.idInchiriere);
         this.list=vec;
         this.save();
 

@@ -71,8 +71,7 @@ class ControlMasina{
         this.save();
       }
 
-
-      
+    
 
      }
 
@@ -84,25 +83,17 @@ class ControlMasina{
       
       let vec=this.list.filter((e)=>e.id!=masina.id);
       this.list=vec;
-
-
       this.save();
     
      }
 
 
-     pozitieMasina=(masina)=>{
-       
-      
+     pozitieMasina=(masina)=>{     
         for(let i=0;i<this.list.length;i++){
-
             if(this.list[i].id==masina.id){
-
                return i;
             }
-
-         
-        }
+         }
         return -1;
    }
 

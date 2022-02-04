@@ -19,6 +19,9 @@ class Home{
 
         this.btnCreareMasina.addEventListener("click",this.handleclick);
 
+    
+
+
        
      }
 
@@ -87,6 +90,8 @@ class Home{
 
 
      }
+
+
      
 
 
