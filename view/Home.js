@@ -2,6 +2,8 @@ import ControllerMasini from "../controller/ControlMasina.js"
 
 import Addcar from "../view/Addcar.js";
 
+import Updatecar from "../view/Updatecar.js";
+
 class Home{
 
 
@@ -20,6 +22,14 @@ class Home{
         this.btnCreareMasina.addEventListener("click",this.handleclick);
 
     
+        this.tableCars=document.querySelector(".tableCars");
+
+        this.tableCars.addEventListener("click",this.handleSelectCar);
+
+
+      
+
+    
 
 
        
@@ -32,7 +42,7 @@ class Home{
         
         <h3>Masini</h3>
         <button class="creeazaMasina">Creeaza Masina</button>
-        <table>
+        <table class="tableCars"> 
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -70,9 +80,7 @@ class Home{
                 <td>${e.an}</td>
 
               </tr>
-    
-    
-    
+            
             `
         })
      }
@@ -90,6 +98,21 @@ class Home{
 
 
      }
+
+    
+
+     handleSelectCar=(e)=>{
+      
+     
+      new Updatecar(1);
+     
+      
+
+
+     }
+
+
+
 
 
      

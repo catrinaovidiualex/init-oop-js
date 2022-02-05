@@ -74,12 +74,12 @@ class Addcar{
           
          }
          if(obj.classList.contains("pretMasina")){
-             this.masina.pret=obj.value
+             this.masina.pret=obj.value;
             
          }
 
          if(obj.classList.contains("anMasina")){
-            this.masina.an=obj.value
+            this.masina.an=obj.value;
             
         }
 
@@ -106,7 +106,8 @@ class Addcar{
           
   
        }
-       
+
+      
  
 
 }

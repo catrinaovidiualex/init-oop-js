@@ -104,6 +104,18 @@ class ControlMasina{
          localStorage.setItem('masini',JSON.stringify(this.list));
          
 
+      
+      }
+
+      getMasinaById=(id)=>{
+
+        
+         for(let i=0;i<this.list.length;i++){
+            if(this.list[i].id==id){
+               return this.list[i];
+            }
+         }
+        return -1;
       }
 
 
