@@ -21,16 +21,10 @@ class Home{
 
         this.btnCreareMasina.addEventListener("click",this.handleclick);
 
-    
+        
         this.tableCars=document.querySelector(".tableCars");
 
         this.tableCars.addEventListener("click",this.handleSelectCar);
-
-
-      
-
-    
-
 
        
      }
@@ -102,14 +96,23 @@ class Home{
     
 
      handleSelectCar=(e)=>{
+    
+      this.controllMasini.list.forEach((e)=>{
+         new Updatecar(e.id);
+      })
+   
       
      
-      new Updatecar(1);
+     
+     
+     
+   
      
       
 
 
      }
+  
 
 
 

@@ -11,7 +11,8 @@ export default class Updatecar{
         this.controllerMasini=new ControllerMasini();
 
         this.masina=this.controllerMasini.getMasinaById(id);
-       // this.masina=this.controllerMasini.getMasinaById(marca);
+        
+       
        // this.updateCars=document.querySelector(".updateCars");
        // this.updateCars.addEventListener("click",this.handleUpdate)
 
@@ -69,7 +70,6 @@ export default class Updatecar{
     populateInputs=()=>{
 
         let idMasina=document.querySelector(".idMasina");
-
         idMasina.value=this.masina.id;
 
         let marcaMasina=document.querySelector(".marcaMasina");
