@@ -1,5 +1,6 @@
 import ControllerMasini from "../controller/ControlMasina.js";
 import Masina from "../model/Masina.js";
+import Home from "./Home.js";
 
 export default class Updatecar{
 
@@ -19,14 +20,21 @@ export default class Updatecar{
 
         this.populateInputs();
 
-        this.m={};
+        this.m={id};
 
         this.container=document.querySelector(".updateCars");
 
         this.container.addEventListener('input',this.handleUpdateOfInputs);
 
         this.btnModif=document.querySelector(".modifMasina");
-        this.btnModif.addEventListener("click",this.handleUpdateOfInputs);
+
+        this.btnModif.addEventListener("click",this.handleModificaMasina);
+
+        this.btnDeleteC=document.querySelector(".stergeMasina");
+        this.btnDeleteC.addEventListener("click",this.handleStergeMasina);
+
+        this.btnExitChange=document.querySelector(".anuleazaModif");
+        this.btnExitChange.addEventListener("click",this.handleAnuleazaModificare);
        
         
     }
@@ -122,11 +130,28 @@ export default class Updatecar{
 
     handleModificaMasina=(e)=>{
 
+        e.preventDefault();
 
+        console.log("asdasd");
 
+         this.controllerMasini.update(this.m);
 
+       
+         new Home();
 
          
+    }
+
+    handleStergeMasina=(e)=>{
+        e.preventDefault();
+            console.log("test stergere masina");
+         this.controllerMasini.stergeMasina(this.m);
+         new Home();
+    }
+
+    handleAnuleazaModificare=(e)=>{
+        e.preventDefault();
+        new Home();
     }
 
 }

@@ -7,7 +7,7 @@ import Updatecar from "../view/Updatecar.js";
 class Home{
 
 
-     constructor(id){
+     constructor(){
 
         this.container=document.querySelector(".container");
 
@@ -18,13 +18,13 @@ class Home{
         this.populateTable();
 
         this.btnCreareMasina=document.querySelector(".creeazaMasina");
-
         this.btnCreareMasina.addEventListener("click",this.handleclick);
 
         
         this.tableCars=document.querySelector(".tableCars");
-
         this.tableCars.addEventListener("click",this.handleSelectCar);
+
+        
 
        
      }
@@ -91,6 +91,7 @@ class Home{
 
 
      }
+
     
 
      handleSelectCar=(e)=>{
@@ -117,19 +118,5 @@ class Home{
 
      }
 
-
-  
-
-
-
-
-
-     
-
-
 }
-
-
-
-
 export default Home;

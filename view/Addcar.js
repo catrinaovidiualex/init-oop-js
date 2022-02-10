@@ -16,9 +16,6 @@ class Addcar{
     this.add=document.querySelector(".newCars");
 
     this.add.addEventListener("click",this.handleclickadd);
-
-
-
  
     }
 
@@ -106,8 +103,6 @@ class Addcar{
           
   
        }
-
-      
  
 
 }
