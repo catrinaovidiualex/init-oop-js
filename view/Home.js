@@ -7,7 +7,7 @@ import Updatecar from "../view/Updatecar.js";
 class Home{
 
 
-     constructor(){
+     constructor(id){
 
         this.container=document.querySelector(".container");
 
@@ -72,7 +72,6 @@ class Home{
                 <td><a href="#" class="linkCars">${e.marca}</a></td>
                 <td>${e.pret}</td>
                 <td>${e.an}</td>
-
               </tr>
             
             `
@@ -92,26 +91,33 @@ class Home{
 
 
      }
-
     
 
      handleSelectCar=(e)=>{
-    
-      this.controllMasini.list.forEach((e)=>{
-         new Updatecar(e.id);
-      })
-   
-      
-     
-     
-     
-     
-   
-     
-      
+        
 
+      let obj=e.target;
+
+      if(obj.classList.contains("linkCars")){
+       
+          // extragem id-ul masinii
+         
+         let idparseInt=obj.parentNode.previousSibling.parentNode.textContent.trim();
+
+         new Updatecar(parseInt(idparseInt));
+
+      }
 
      }
+
+     handleUpdateCar=(e)=>{
+        let obj=e.target;
+
+      console.log(obj);
+
+     }
+
+
   
 
 

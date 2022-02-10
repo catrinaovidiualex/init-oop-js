@@ -11,12 +11,22 @@ export default class Updatecar{
         this.controllerMasini=new ControllerMasini();
 
         this.masina=this.controllerMasini.getMasinaById(id);
+
         
        
        // this.updateCars=document.querySelector(".updateCars");
        // this.updateCars.addEventListener("click",this.handleUpdate)
 
         this.populateInputs();
+
+        this.m={};
+
+        this.container=document.querySelector(".updateCars");
+
+        this.container.addEventListener('input',this.handleUpdateOfInputs);
+
+        this.btnModif=document.querySelector(".modifMasina");
+        this.btnModif.addEventListener("click",this.handleUpdateOfInputs);
        
         
     }
@@ -60,7 +70,34 @@ export default class Updatecar{
 
     }
 
-    handleUpdate=(e)=>{
+    handleUpdateOfInputs=(e)=>{
+
+
+        let obj=e.target;
+
+        if(obj.classList.contains('marcaMasina')){
+
+            this.m.marca=obj.value;
+          
+        }
+
+        if (obj.classList.contains("idMasina")){
+            this.m.id=obj.value;
+           
+        }
+
+        if (obj.classList.contains("pretMasina")){
+            this.m.pret=obj.value;
+
+            
+        }
+
+        if (obj.classList.contains("anMasina")){
+            this.m.an=obj.value;
+
+            
+        }
+
 
         
 
@@ -81,6 +118,15 @@ export default class Updatecar{
         let anMasina=document.querySelector(".anMasina");
         anMasina.value=this.masina.an;
 
+    }
+
+    handleModificaMasina=(e)=>{
+
+
+
+
+
+         
     }
 
 }
