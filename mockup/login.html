@@ -7,29 +7,32 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Login</title>
 </head>
-<body>
+<body class="loginBody">
     <div class="containerLogin">
         <h1>Login</h1>
         <form method="loginForm">
             <div class="textField">
                 <label for="username">Username</label>
-                <input type="text" mandatory>
+                <input type="text" mandatory class="username">
             </div>
 
             <div class="textField">
                 <label for="password">Parola</label>
-                <input type="text" mandatory>
+                <input type="text" mandatory class="password">
             </div>
 
             <div class="forgotPass">Ati uitat parola?<a href="">Modificare parola</a></div>
             <div class="signup_link"><a href="">Cont nou</a></div>
 
-            <input type="submit" value="Login">
+            <button  class="butonLogare">Login</button>
 
         </form>
 
 
     </div>
+
+
+    <script src="/view/Login.js"></script>
 
 
 </body>

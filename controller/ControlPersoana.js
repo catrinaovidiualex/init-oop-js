@@ -1,12 +1,18 @@
 import Persoana from "../model/Persoana.js";
+
+
+
+
 class ControlPersoana{
 constructor(){
 this.list=[];
+
 this.load();            
 }
 
 load=()=>{
 let items=localStorage.getItem("persoane");
+
 JSON.parse(items).forEach(pers => {
     this.list.push(new Persoana(pers.idPers,pers.nume,pers.prenume,pers.varsta,pers.user,pers.parola));
     
@@ -85,9 +91,22 @@ let vec=this.list.filter((e)=>e.idPers!=pers.idPers);
 this.list=vec;
 this.save();
 
+} 
+
+//todo functie ce  primeste ca  parametru username si parola si returneaza persoana daca exista
+
+checkUserDetails(username, pass){
+  
+    let arr=this.list.filter(e=>e.user===username&&e.parola===pass);
+
+    console.log(arr);
+    return arr;
+
 }
 
 
+
+ 
 }
 
 export default ControlPersoana;

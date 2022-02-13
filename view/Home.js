@@ -7,7 +7,7 @@ import Updatecar from "../view/Updatecar.js";
 class Home{
 
 
-     constructor(){
+     constructor(person){
 
         this.container=document.querySelector(".container");
 
@@ -23,6 +23,7 @@ class Home{
         
         this.tableCars=document.querySelector(".tableCars");
         this.tableCars.addEventListener("click",this.handleSelectCar);
+        this.person=person;
 
         
 
