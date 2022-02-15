@@ -28,7 +28,7 @@ import Persoana from "../model/Persoana.js";
 
         let sol=this.controll.checkUserDetails(this.userName.value,this.pass.value);
 
-        
+
         if(sol.length>0)
         {
             alert("Logare cu succes!"+sol[0].user);
@@ -53,11 +53,14 @@ import Persoana from "../model/Persoana.js";
             <div class="textField">
                 <label for="username">Username</label>
                 <input type="text" mandatory class="username">
+                <span>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                </span>
             </div>
 
             <div class="textField">
                 <label for="password">Parola</label>
-                <input type="text" mandatory class="password">
+                <input type="password" mandatory class="password">
             </div>
 
             <div class="forgotPass">Ati uitat parola?<a href="">Modificare parola</a></div>
@@ -72,6 +75,19 @@ import Persoana from "../model/Persoana.js";
         
         `
         
+    }
+
+    showHidePassword(){
+        let state=false;
+        if(state()){
+         this.document.getElementById(".password").setAttribute("type","password");
+         state=false;
+        }else{
+         this.document.getElementById(".password").setAttribute("type","text");
+         state=true;
+
+        }
+
     }
 
     

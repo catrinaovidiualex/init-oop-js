@@ -508,6 +508,15 @@ input{
   font-weight: bold;
   
 }
+span{
+  
+  
+  transform: translate(45%,250%);
+  right:45px;
+  
+  cursor: pointer;
+}
+
 
   
 
