@@ -110,6 +110,25 @@ button.creeazaMasina {
       background-color: rgb(12, 141, 23);
   }
 
+  button.inchiriazaMasina {
+    
+    background-color: #04AA6D;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding:5px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius:5px ;
+  }
+  button.inchiriazaMasina:hover{
+      background-color: rgb(12, 141, 23);
+  }
+
   .containerM{
     width:300px; 
     display: flex;

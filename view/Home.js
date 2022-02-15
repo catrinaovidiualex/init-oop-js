@@ -37,6 +37,7 @@ class Home{
         
         <h3>Masini</h3>
         <button class="creeazaMasina">Creeaza Masina</button>
+        <button class="inchiriazaMasina">Inchiriaza Masina</button>
         <table class="tableCars"> 
             <thead>
                 <tr>
