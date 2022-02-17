@@ -3,7 +3,6 @@ import ControllerMasini from "../controller/ControlMasina.js"
 import Addcar from "../view/Addcar.js";
 
 import Updatecar from "../view/Updatecar.js";
-import Login from "./Login.js";
 
 class Home{
 
@@ -26,8 +25,6 @@ class Home{
         this.tableCars.addEventListener("click",this.handleSelectCar);
         this.person=person;
 
-        this.habdleClickShowHidePass();
-
         
 
        
@@ -40,7 +37,7 @@ class Home{
         
         <h3>Masini</h3>
         <button class="creeazaMasina">Creeaza Masina</button>
-        <button class="inchiriazaMasina">Inchiriaza Masina</button>
+        <!--<button class="inchiriazaMasina">Inchiriaza Masina</button>-->
         <table class="tableCars"> 
             <thead>
                 <tr>
@@ -121,11 +118,6 @@ class Home{
 
       console.log(obj);
 
-     }
-
-     habdleClickShowHidePass=(e)=>{
-     new Login();
-     
      }
 
 }

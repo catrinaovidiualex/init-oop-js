@@ -1,5 +1,5 @@
 class Inchiriere{
-    constructor(idInchiriere,idMasina,idPersoana,createdate){
+    constructor(idMasina.idPersoana){
         this.idInchiriere=idInchiriere;
         this.idMasina=idMasina;
         this.idPersoana=idPersoana;

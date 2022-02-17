@@ -17,8 +17,6 @@ import Persoana from "../model/Persoana.js";
     
     this.btnLogin.addEventListener("click",this.checkUserInfo);
     this.controll = new ControlPersoana();
-    this.btnShowHidePass=document.getElementById('eyePass');
-    this.btnLogin.addEventListener("click",this.showHidePassword);
     
    
 
@@ -55,15 +53,14 @@ import Persoana from "../model/Persoana.js";
             <div class="textField">
                 <label for="username">Username</label>
                 <input type="text" mandatory class="username">
-               
+                <span>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                </span>
             </div>
 
             <div class="textField">
                 <label for="password">Parola</label>
                 <input type="password" mandatory class="password">
-                <span>
-                <i id="eyePass" class="fa fa-eye" aria-hidden="true"></i>
-                </span>
             </div>
 
             <div class="forgotPass">Ati uitat parola?<a href="">Modificare parola</a></div>

@@ -1,5 +1,6 @@
 import ControllerMasini from "../controller/ControlMasina.js";
 import Masina from "../model/Masina.js";
+import Home from "./Home.js";
 
 class Addcar{
 
@@ -16,6 +17,8 @@ class Addcar{
     this.add=document.querySelector(".newCars");
 
     this.add.addEventListener("click",this.handleclickadd);
+
+ 
  
     }
 
@@ -92,15 +95,10 @@ class Addcar{
     handleclickadd=()=>{
        
         this.control.adaugareMasinaNoua(this.masina);
+       
 
-
-        location.reload();
-
-
-        
-  
-  
-          
+        new Home();
+    
   
        }
  

@@ -15,7 +15,7 @@ class Persoana{
            descriereP+=" Prenume persoana: "+this.prenume+",";
            descriereP+=" Varsta persoana: "+this.varsta+";";
            descriereP+=" User: "+this.user+";";
-           descriereP+=" Parola: "+this.parola+";";
+           descriereP+=" Parola: "+this.parola+";"
 
            return descriereP;
     }

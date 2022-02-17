@@ -76,6 +76,8 @@ export default class Updatecar{
 
      `
 
+
+
     }
 
     handleUpdateOfInputs=(e)=>{
@@ -106,6 +108,7 @@ export default class Updatecar{
             
         }
 
+        
 
         
 
@@ -125,6 +128,8 @@ export default class Updatecar{
 
         let anMasina=document.querySelector(".anMasina");
         anMasina.value=this.masina.an;
+
+        
 
     }
 
